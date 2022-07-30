@@ -32,6 +32,9 @@ class Number:
     def is_odd(self):
         return self.num % 2 == 1 # if self.num is odd return True ,otherwise return False
     def is_prime(self):
+        if self.num == 2:
+            return True
+        # this code returns 2 as false because 2%2==0 True
         for i in range(2, math.sqrt(self.num) +1):
             if self.num % i == 0:
                 return False 

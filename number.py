@@ -29,3 +29,9 @@ class Number:
         """
         if self.num < 0:
             return True
+    
+    def is_zero(self) -> bool:
+        """checking that the number is zero
+        """
+        if self.num == 0:
+            return True

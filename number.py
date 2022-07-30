@@ -91,3 +91,13 @@ class Number:
             if self.num % i == 0:
                 return False 
         return True
+    
+    def str_to_int(self):
+        '''
+        this method parse given string to integer
+        Args:
+            String
+        Returns:
+            int
+        '''
+        return int(str)

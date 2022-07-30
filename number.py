@@ -1,5 +1,9 @@
 class Number:
     def __init__(self,num):
-        pass
+        self.num = num
+    def data_tpye(self):
+        return self.num
+        
+
 
     # Create methods of Number class

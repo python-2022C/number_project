@@ -4,4 +4,6 @@ class Number:
     def data_type(self):
         return type(self.num)
         # type -> int, str, bool, float 
+    def len(self):
+        return len(str(self.num)) # -> int
 

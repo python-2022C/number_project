@@ -1,12 +1,6 @@
 class Number:
     def __init__(self,num):
         self.num = num
-
-    def data_tpye(self):
-        return self.num
-        
-
-
     # Create methods of Number class
     def length(self):
         """
@@ -23,4 +17,11 @@ class Number:
         Returns given number is zero or non -> bool
         """
         return self.num == 0
-
+    def is_prime(self):
+        """
+        Returns given number is prime or non -> bool
+        """
+        nums = []
+        for i in range(1, self.num+1):
+            if self.num%i==0: nums.append(i)
+        return len(nums) == 2

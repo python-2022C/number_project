@@ -85,7 +85,20 @@ class Number:
         Returns:
             bool: true if number is prime otherwise false.
         '''
-        for i in range(2, int(math.sqrt(self.number)) + 1):
-            if self.number % i == 0:
+
+        if self.number == 2:
+            return True
+        for i in range(2, math.sqrt(self.num) +1):
+            if self.num % i == 0:
                 return False 
         return True
+    
+    def str_to_int(self):
+        '''
+        this method parse given string to integer
+        Args:
+            String
+        Returns:
+            int
+        '''
+        return int(str)

@@ -6,4 +6,4 @@ class Number:
     def iszero(self):
         if self.number == 0:
             return True
-        return False
+        return False 

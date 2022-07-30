@@ -85,7 +85,7 @@ class Number:
         Returns:
             bool: true if number is prime otherwise false.
         '''
-        for i in range(2, int(math.sqrt(self.number)) +1):
-            if self.num % i == 0:
+        for i in range(2, int(math.sqrt(self.number)) + 1):
+            if self.number % i == 0:
                 return False 
         return True

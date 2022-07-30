@@ -23,4 +23,5 @@ class Number:
         Returns given number is zero or non -> bool
         """
         return self.num == 0
-
+    def even(self):
+        return self.num%2==0

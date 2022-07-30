@@ -1,3 +1,6 @@
+import re
+
+
 class Number:
     def __init__(self,num):
         self.num = num
@@ -35,3 +38,12 @@ class Number:
         """
         if self.num == 0:
             return True
+    
+    def is_even(self) ->bool:
+        """
+        a function that determines the evenness of a number
+        """
+        if self.num % 2 == 0:
+            return True
+        else:
+            return False

@@ -89,7 +89,7 @@ class Number:
         if self.number == 2:
             return True
         for i in range(2, int(math.sqrt(self.number)) +1):
-            if self.number % i == 0:
+            if i % i == 0:
                 return False 
         return True
     

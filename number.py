@@ -1,91 +1,65 @@
-import math
+import re,math
+
 
 class Number:
     def __init__(self,num):
-        self.number = num
+        self.num = num
 
-    def data_type(self):
-        '''
-        this method returns the type of the number.
-        '''
-        return type(self.number)
+    # Create methods of Number class
 
-    def len(self) -> int:
-        '''
-        this method returns the length of the number. 
+    def data_taype(self) ->type:
+        """
+        function that returns the type of the number
+        """
+        return type(self.num)
 
-        Args:
-            No
-        Returns: 
-            int: the length of the number.
-        '''
-        return len(str(self.number))
+    def number_len(self) ->len:
+        """
+        a function that returns the length of a number
+        """
+        return len(str(self.num))
 
-    def is_positive(self) -> bool:
-        '''
-        this mehtod returns true if number is positive otherwise false.
+    def is_positive(self) ->bool:
+        """
+        function that checks the positivity of a number
+        """
+        if self.num > 0:
+            return True
 
-        Args:
-            No
-        Returns:
-            bool: true if number is positive otherwise false.
-        '''
-        return self.number > 0
-
-    def is_negative(self) -> bool:
-        '''
-        this mehtod returns true if number is negative otherwise false.
-
-        Args:
-            No
-        Returns:
-            bool: true if number is negative otherwise false.
-        '''
-        return self.number < 0
-
+    def is_negative(self) ->bool:
+        """
+        function that checks the negativity of a number
+        """
+        if self.num < 0:
+            return True
+    
     def is_zero(self) -> bool:
-        '''
-        this mehtod returns true if number is zero otherwise false.
+        """checking that the number is zero
+        """
+        if self.num == 0:
+            return True
+    
+    def is_even(self) ->bool:
+        """
+        a function that determines the evenness of a number
+        """
+        if self.num % 2 == 0:
+            return True
+        else:
+            return False
 
-        Args:
-            No
-        Returns:
-            bool: true if number is zero otherwise false.
-        '''
-        return self.number == 0
-
-    def is_even(self) -> bool:
-        '''
-        this mehtod returns true if number is even number otherwise false.
-
-        Args:
-            No
-        Returns:
-            bool: true if number is even number otherwise false.
-        '''
-        return self.number % 2 == 0
-
-    def is_odd(self) -> bool:
-        '''
-        this mehtod returns true if number is odd number otherwise false.
-
-        Args:
-            No
-        Returns:
-            bool: true if number is odd number otherwise false.
-        '''
-        return self.number % 2 == 1
-
-    def is_prime(self) -> bool:
-        '''
-        this mehtod returns true if number is prime otherwise false.
-
-        Args:
-            No
-        Returns:
-            bool: true if number is prime otherwise false.
-        '''
+    def is_odd(self) ->bool:
+        """
+        a function that determines the oddness of a number
+        """
+        if self.num % 2 == 1:
+            return True
+        else:
+            return False
+    
+    def is_prime(self):
+        """a function that checks the integrity of a number"""
         for i in range(2, math.sqrt(self.num) +1):
             if self.num % i == 0:
                 return False 
-        return True
+        return True # if self.num is prime return True ,otherwise return False

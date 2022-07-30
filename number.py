@@ -8,10 +8,17 @@ class Number:
         """
         function that returns the type of the number
         """
-        return (self.num)
+        return type(self.num)
 
     def number_len(self) ->len:
         """
         a function that returns the length of a number
         """
         return len(str(self.num))
+
+    def is_positive(self) ->bool:
+        """
+        function that checks the positivity of a number
+        """
+        if self.num > 0:
+            return True

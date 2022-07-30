@@ -1,6 +1,13 @@
 class Number:
     def __init__(self,num):
         self.num = num
+
+    def data_tpye(self):
+        return self.num
+        
+
+
+    # Create methods of Number class
     def length(self):
         """
         Returns length of number -> int
@@ -16,3 +23,4 @@ class Number:
         Returns given number is zero or non -> bool
         """
         return self.num == 0
+

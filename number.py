@@ -56,3 +56,10 @@ class Number:
             return True
         else:
             return False
+    def is_prime(self):
+      """a function that checks the integrity of a number"""
+        for i in range(2, math.sqrt(self.num) +1):
+            if self.num % i == 0:
+                return False 
+        return True # if self.num is prime return True ,otherwise return False
+

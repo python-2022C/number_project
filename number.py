@@ -47,3 +47,12 @@ class Number:
             return True
         else:
             return False
+
+    def is_odd(self) ->bool:
+        """
+        a function that determines the oddness of a number
+        """
+        if self.num % 2 == 1:
+            return True
+        else:
+            return False

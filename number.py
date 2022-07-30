@@ -9,8 +9,6 @@ class Number:
         if self.number == 0:
             return True
         return False 
-        return False
-        self.num = num
 
 
 
@@ -23,7 +21,10 @@ class Number:
     def len(self):
         return len(str(self.num)) # -> int
     def is_positive(self):
-        return self.num > 0 # if self.num > 0 return True ,otherwise return False
+        """
+        if self.num > 0 return True ,otherwise return False
+        """
+        return self.num > 0 
     def is_negative(self):
         return self.num < 0 # if self.num < 0 return True ,otherwise return False
     def is_even(self):

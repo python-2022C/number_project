@@ -9,3 +9,9 @@ class Number:
         function that returns the type of the number
         """
         return (self.num)
+
+    def number_len(self) ->len:
+        """
+        a function that returns the length of a number
+        """
+        return len(str(self.num))

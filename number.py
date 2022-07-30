@@ -88,17 +88,18 @@ class Number:
 
         if self.number == 2:
             return True
-        for i in range(2, math.sqrt(self.num) +1):
-            if self.num % i == 0:
+        for i in range(2, int(math.sqrt(self.number)) +1):
+            if self.number % i == 0:
                 return False 
         return True
     
-    def str_to_int(self):
+    def int_to_str(self) -> str:
         '''
-        this method parse given string to integer
+        this method converts to string.
+        
         Args:
-            String
+            No
         Returns:
-            int
+            str: convert to string
         '''
-        return int(str)
+        return str(self.number)

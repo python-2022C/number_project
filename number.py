@@ -11,3 +11,8 @@ class Number:
         Returns data type of number -> int, float
         """
         return type(self.num)
+    def is_zero(self):
+        """
+        Returns given number is zero or non -> bool
+        """
+        return self.num == 0

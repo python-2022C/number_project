@@ -22,3 +22,10 @@ class Number:
         """
         if self.num > 0:
             return True
+
+    def is_negative(self) ->bool:
+        """
+        function that checks the negativity of a number
+        """
+        if self.num < 0:
+            return True

@@ -1,8 +1,8 @@
 
 import math
+
 class Number:
     def __init__(self,num):
-
         self.number = num
 
     def data_type(self):
@@ -31,3 +31,4 @@ class Number:
             if self.num % i == 0:
                 return False 
         return True
+

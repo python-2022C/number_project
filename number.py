@@ -1,3 +1,4 @@
+
 import math
 
 class Number:
@@ -5,101 +6,29 @@ class Number:
         self.number = num
 
     def data_type(self):
-        '''
-        this method returns the type of the number.
-        '''
         return type(self.number)
 
-    def len(self) -> int:
-        '''
-        this method returns the length of the number. 
-
-        Args:
-            No
-        Returns: 
-            int: the length of the number.
-        '''
+    def len(self):
         return len(str(self.number))
 
-    def is_positive(self) -> bool:
-        '''
-        this mehtod returns true if number is positive otherwise false.
-
-        Args:
-            No
-        Returns:
-            bool: true if number is positive otherwise false.
-        '''
+    def is_positive(self):
         return self.number > 0
 
-    def is_negative(self) -> bool:
-        '''
-        this mehtod returns true if number is negative otherwise false.
-
-        Args:
-            No
-        Returns:
-            bool: true if number is negative otherwise false.
-        '''
+    def is_negative(self):
         return self.number < 0
 
-    def is_zero(self) -> bool:
-        '''
-        this mehtod returns true if number is zero otherwise false.
-
-        Args:
-            No
-        Returns:
-            bool: true if number is zero otherwise false.
-        '''
+    def iszero(self):
         return self.number == 0
 
-    def is_even(self) -> bool:
-        '''
-        this mehtod returns true if number is even number otherwise false.
-
-        Args:
-            No
-        Returns:
-            bool: true if number is even number otherwise false.
-        '''
+    def is_even(self):
         return self.number % 2 == 0
-
-    def is_odd(self) -> bool:
-        '''
-        this mehtod returns true if number is odd number otherwise false.
-
-        Args:
-            No
-        Returns:
-            bool: true if number is odd number otherwise false.
-        '''
+    
+    def is_odd(self):
         return self.number % 2 == 1
-
-    def is_prime(self) -> bool:
-        '''
-        this mehtod returns true if number is prime otherwise false.
-
-        Args:
-            No
-        Returns:
-            bool: true if number is prime otherwise false.
-        '''
-
-        if self.number == 2:
-            return True
-        for i in range(2, int(math.sqrt(self.number)) +1):
-            if i % i == 0:
+    
+    def is_prime(self):
+        for i in range(2, math.sqrt(self.num) +1):
+            if self.num % i == 0:
                 return False 
         return True
-    
-    def int_to_str(self) -> str:
-        '''
-        this method converts to string.
-        
-        Args:
-            No
-        Returns:
-            str: convert to string
-        '''
-        return str(self.number)
+
